@@ -3,9 +3,10 @@
 
 using namespace std;
 
-class teacher{
+class Teacher{
     private :
     double salary;
+
     public :   
     string name ;
     string department ;
@@ -26,12 +27,12 @@ class teacher{
 };
 
 int main(){
-    teacher t1;
+    Teacher t1;
     t1.name = "shradha";
-    t1.department ="computer science";
     t1.subject = "C++";
     t1.setsalary(25000);
     cout << t1.getsalary()<< endl;
+    t1.change_department("computer science");
     cout << t1.name << endl;
     cout << t1.department << endl;
     return 0;
