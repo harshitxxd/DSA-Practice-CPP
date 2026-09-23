@@ -6,16 +6,16 @@ struct ListNode {
     int val;
     ListNode* next;
 
-    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x) : val(x), next(NULL) {}
 };
 
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        ListNode* prev = nullptr;
+        ListNode* prev = NULL;
         ListNode* curr = head;
 
-        while (curr != nullptr) {
+        while (curr != NULL) {
             ListNode* nextNode = curr->next;
             curr->next = prev;
             prev = curr;
@@ -28,7 +28,7 @@ public:
 
 vector<int> collectList(ListNode* head) {
     vector<int> result;
-    while (head != nullptr) {
+    while (head != NULL) {
         result.push_back(head->val);
         head = head->next;
     }

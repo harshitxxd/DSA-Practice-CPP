@@ -5,20 +5,20 @@ struct ListNode {
     int val;
     ListNode* next;
 
-    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x) : val(x), next(NULL) {}
 };
 
 class Solution {
 public:
     ListNode* detectCycle(ListNode* head) {
-        if (head == nullptr || head->next == nullptr) {
-            return nullptr;
+        if (head == NULL || head->next == NULL) {
+            return NULL;
         }
 
         ListNode* slow = head;
         ListNode* fast = head;
 
-        while (fast != nullptr && fast->next != nullptr) {
+        while (fast != NULL && fast->next != NULL) {
             slow = slow->next;
             fast = fast->next->next;
 
@@ -32,7 +32,7 @@ public:
             }
         }
 
-        return nullptr;
+        return NULL;
     }
 };
 
@@ -46,7 +46,7 @@ int main() {
     Solution sol;
     ListNode* cycleStart = sol.detectCycle(head);
 
-    if (cycleStart == nullptr) {
+    if (cycleStart == NULL) {
         cout << "No cycle" << endl;
     } else {
         cout << "Cycle begins at node with value: " << cycleStart->val << endl;
