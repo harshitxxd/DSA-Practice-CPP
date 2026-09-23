@@ -8,6 +8,16 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
 };
 
+void insert(ListNode*& head, ListNode*& tail, int value) {
+    ListNode* newNode = new ListNode(value);
+    if (head == NULL) {
+        head = tail = newNode;
+    } else {
+        tail->next = newNode;
+        tail = newNode;
+    }
+}
+
 class Solution {
 public:
     bool hasCycle(ListNode* head) {
@@ -28,11 +38,13 @@ public:
 };
 
 int main() {
-    ListNode* head = new ListNode(3);
-    head->next = new ListNode(2);
-    head->next->next = new ListNode(0);
-    head->next->next->next = new ListNode(-4);
-    head->next->next->next->next = head->next;
+    ListNode* head = NULL;
+    ListNode* tail = NULL;
+    insert(head, tail, 3);
+    insert(head, tail, 2);
+    insert(head, tail, 0);
+    insert(head, tail, -4);
+    tail->next = head->next;
 
     Solution sol;
     cout << boolalpha << sol.hasCycle(head) << endl;

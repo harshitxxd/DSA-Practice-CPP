@@ -9,6 +9,16 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
 };
 
+void insert(ListNode*& head, ListNode*& tail, int value) {
+    ListNode* newNode = new ListNode(value);
+    if (head == NULL) {
+        head = tail = newNode;
+    } else {
+        tail->next = newNode;
+        tail = newNode;
+    }
+}
+
 class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
@@ -34,12 +44,14 @@ vector<int> collectList(ListNode* head) {
 }
 
 int main() {
-    ListNode* head = new ListNode(1);
-    head->next = new ListNode(2);
-    head->next->next = new ListNode(3);
-    head->next->next->next = new ListNode(4);
-    head->next->next->next->next = new ListNode(5);
-    head->next->next->next->next->next = new ListNode(6);
+    ListNode* head = NULL;
+    ListNode* tail = NULL;
+    insert(head, tail, 1);
+    insert(head, tail, 2);
+    insert(head, tail, 3);
+    insert(head, tail, 4);
+    insert(head, tail, 5);
+    insert(head, tail, 6);
 
     Solution sol;
     ListNode* middle = sol.middleNode(head);

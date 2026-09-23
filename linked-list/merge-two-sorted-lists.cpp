@@ -9,6 +9,16 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
 };
 
+void insert(ListNode*& head, ListNode*& tail, int value) {
+    ListNode* newNode = new ListNode(value);
+    if (head == NULL) {
+        head = tail = newNode;
+    } else {
+        tail->next = newNode;
+        tail = newNode;
+    }
+}
+
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
@@ -41,13 +51,17 @@ vector<int> collectList(ListNode* head) {
 }
 
 int main() {
-    ListNode* list1 = new ListNode(1);
-    list1->next = new ListNode(2);
-    list1->next->next = new ListNode(4);
+    ListNode* list1 = NULL;
+    ListNode* tail1 = NULL;
+    insert(list1, tail1, 1);
+    insert(list1, tail1, 2);
+    insert(list1, tail1, 4);
 
-    ListNode* list2 = new ListNode(1);
-    list2->next = new ListNode(3);
-    list2->next->next = new ListNode(4);
+    ListNode* list2 = NULL;
+    ListNode* tail2 = NULL;
+    insert(list2, tail2, 1);
+    insert(list2, tail2, 3);
+    insert(list2, tail2, 4);
 
     Solution sol;
     ListNode* merged = sol.mergeTwoLists(list1, list2);

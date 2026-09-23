@@ -11,7 +11,7 @@ algorithms, problem-solving patterns, and object-oriented programming.
 - **Bitwise** - Bitwise operators, powers of two, and number reversal
 - **Functions** - Factorial, Fibonacci, primality, and digit problems
 - **LeetCode solutions** - Selected coding-problem solutions
-- **Linked list** - Reversal, cycle detection, middle node, and merge operations
+- **Linked list** - Singly, circular, and doubly linked lists; reversal, cycle detection, middle node, merging, random pointers, and multilevel flattening
 - **Stacks, queues, and trees** - Data structure practice
 - **OOPs** - Classes, constructors, destructors, inheritance, polymorphism, abstraction, and static members
 - **Patterns** - Common C++ pattern-printing exercises
