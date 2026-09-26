@@ -1,46 +1,46 @@
-# DSA Practice in C++
+# C++ Programming and DSA Practice
 
 A collection of C++ solutions and practice programs covering data structures,
 algorithms, problem-solving patterns, and object-oriented programming.
 
 ## Topics
 
-- **Basics** - Armstrong numbers, GCD, and prime checks
-- **Arrays** - Searching, matrix problems, sums, and array manipulation
-- **Binary number system** - Binary and decimal conversions
-- **Bitwise** - Bitwise operators, powers of two, and number reversal
-- **Functions** - Factorial, Fibonacci, primality, and digit problems
-- **LeetCode solutions** - Selected coding-problem solutions
-- **Linked list** - Singly, circular, and doubly linked lists; reversal, k-group reversal, pair swapping, cycle detection, middle node, merging, random pointers, and multilevel flattening
-- **Stacks, queues, and trees** - Data structure practice
-- **OOPs** - Classes, constructors, destructors, inheritance, polymorphism, abstraction, and static members
-- **Patterns** - Common C++ pattern-printing exercises
-- **Pointers** - Pointer arithmetic, arrays, and pass-by-reference
-- **Searching** - Binary-search and partition-based problems
-- **Sorting algorithms** - Bubble, insertion, selection, merge, and related problems
-- **STL** - Containers and algorithms from the C++ Standard Library
-- **Strings and vectors** - String manipulation and vector-based problems
+- **Fundamentals** - Basics, binary number systems, bitwise operations, functions, OOP, patterns, and pointers
+- **Data structures** - Arrays, graphs, linked lists, stacks and queues, standard library containers and algorithms, strings, trees, and vectors
+- **Algorithms** - Dynamic programming, recursion, searching, and sorting
+- **Problem solving** - Selected LeetCode solutions
 
 ## Repository structure
 
-The repository is organized by topic/folder, and new solutions should be added to
-its relevant directory as they are created. Main folders include:
+The repository groups related topics into broader categories. Add new solutions
+to the relevant topic directory:
 
-- `arrays/`
-- `basics/`
-- `binary_number_system/`
-- `bitwise/`
-- `functions/`
-- `leetcode-solutions/`
-- `linked-list/`
-- `OOPs/`
-- `patterns/`
-- `pointers/`
-- `searching/`
-- `sorting-algorithms/`
-- `STL/`
-- `strings/`
-- `vectors/`
+```text
+fundamentals/
+  basics/
+  binary-number-system/
+  bitwise/
+  functions/
+  oop/
+  patterns/
+  pointers/
+data-structures/
+  arrays/
+  graphs/
+  linked-list/
+  stacks-and-queues/
+  standard-library/
+  strings/
+  trees/
+  vectors/
+algorithms/
+  dynamic-programming/
+  recursion/
+  searching/
+  sorting-algorithms/
+problem-solving/
+  leetcode-solutions/
+```
 
 ## Running a Program
 
