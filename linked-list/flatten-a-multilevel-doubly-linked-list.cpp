@@ -44,10 +44,14 @@ public:
                 curr->child = NULL;
 
                 Node* tail = child;
-                while (tail->next != NULL) tail = tail->next;
+                while (tail->next != NULL) {
+                    tail = tail->next;
+                }
 
                 tail->next = next;
-                if (next != NULL) next->prev = tail;
+                if (next != NULL) {
+                    next->prev = tail;
+                }
             }
             curr = curr->next;
         }
